@@ -2,21 +2,21 @@ const data = {
     products: [
       {
         id: '1',
-        name: 'MacBook',
+        name: 'Computadora',
         price: 1400,
-        image: 'https://picsum.photos/id/180/2400/1600',
+        image: 'https://http2.mlstatic.com/D_NQ_NP_878315-MLA48417394279_122021-O.webp',
       },
       {
         id: '2',
-        name: 'Old Car',
+        name: 'Laptop',
         price: 2400,
-        image: 'https://picsum.photos/id/111/4400/2656',
+        image: 'https://http2.mlstatic.com/D_NQ_NP_790107-MLA48909335893_012022-O.webp',
       },
       {
         id: '3',
-        name: 'W Shoes',
+        name: 'mouse',
         price: 1000,
-        image: 'https://picsum.photos/id/21/3008/2008',
+        image: 'src="https://http2.mlstatic.com/D_NQ_NP_966913-MLA32149634914_092019-O.webp"',
       },
     ],
   };

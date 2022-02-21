@@ -1,6 +1,6 @@
-import Header from './components/navBar';
+import navBar from './components/navBar';
 import Main from './components/Main';
-import Basket from './components/cartWidget';
+import cartWidget from './components/cartWidget';
 import data from './components/itemList';
 import { useState } from 'react';
 
@@ -33,14 +33,14 @@ function App() {
   };
   return (
     <div className="App">
-      <Header countCartItems={cartItems.length}></Header>
+      <navBar countCartItems={cartItems.length}></navBar>
       <div className="row">
         <Main products={products} onAdd={onAdd}></Main>
-        <Basket
+        <cartWidget
           cartItems={cartItems}
           onAdd={onAdd}
           onRemove={onRemove}
-        ></Basket>
+        ></cartWidget>
       </div>
     </div>
   );
