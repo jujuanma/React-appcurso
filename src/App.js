@@ -1,8 +1,8 @@
-import { useState } from 'react';
 import Header from './components/navBar';
 import Main from './components/Main';
 import Basket from './components/cartWidget';
 import data from './itemList';
+import { useState } from 'react';
 
 function App() {
   const { products } = data;
