@@ -1,8 +1,8 @@
-import navBar from './components/navBar';
-import Main from './components/Main';
-import cartWidget from './components/cartWidget';
-import data from './components/itemList';
 import { useState } from 'react';
+import Header from './components/navBar';
+import Main from './components/Main';
+import Basket from './components/cartWidget';
+import data from './data';
 
 function App() {
   const { products } = data;
@@ -33,15 +33,15 @@ function App() {
   };
   return (
     <div className="App">
-      <navBar countCartItems={cartItems.length}></navBar>
+      <Header countCartItems={cartItems.length}></Header>
       <div className="row">
         <Main products={products} onAdd={onAdd}></Main>
-        <cartWidget
+        <Basket>
           cartItems={cartItems}
           onAdd={onAdd}
           onRemove={onRemove}
-        ></cartWidget>
-      </div>
+        </Basket>
+              </div>
     </div>
   );
 }
