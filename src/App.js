@@ -1,8 +1,9 @@
-import Header from './components/Header';
-import Main from './components/Main';
-import Basket from './components/Basket';
-import data from './data';
 import { useState } from 'react';
+import Header from './components/navBar';
+import Main from './components/Main';
+import Basket from './components/cartWidget';
+import data from './itemList';
+
 function App() {
   const { products } = data;
   const [cartItems, setCartItems] = useState([]);
@@ -35,12 +36,12 @@ function App() {
       <Header countCartItems={cartItems.length}></Header>
       <div className="row">
         <Main products={products} onAdd={onAdd}></Main>
-        <Basket
+        <Basket>
           cartItems={cartItems}
           onAdd={onAdd}
           onRemove={onRemove}
-        ></Basket>
-      </div>
+        </Basket>
+              </div>
     </div>
   );
 }

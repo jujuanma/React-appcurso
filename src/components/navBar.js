@@ -1,24 +1,24 @@
 import React from 'react';
 
-export default function navBar(props) {
+export default function Header(props) {
   return (
-    <navbar className="block row center">
+    <header className="block row center">
       <div>
         <a href="#/">
-          <h1>Small Shopping Cart</h1>
+          <h1>Carrito de compra</h1>
         </a>
       </div>
       <div>
         <a href="#/cart">
-          Cart{' '}
+          Carrito{' '}
           {props.countCartItems ? (
             <button className="badge">{props.countCartItems}</button>
           ) : (
             ''
           )}
         </a>{' '}
-        <a href="#/signin"> SignIn</a>
+        <a href="#/signin"> Login</a>
       </div>
-    </navbar>
+    </header>
   );
 }
