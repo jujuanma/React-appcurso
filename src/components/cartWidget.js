@@ -1,11 +1,12 @@
 import React from 'react';
 
-export default function Basket(props) {
+export default function cartWidget (props) {
   const { cartItems, onAdd, onRemove } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
   const taxPrice = itemsPrice * 0.14;
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
+
   return (
     <aside className="block col-1">
       <h2>Cart Items</h2>
