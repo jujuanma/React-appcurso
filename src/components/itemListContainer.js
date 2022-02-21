@@ -8,7 +8,7 @@ export default function ItemListContainer(props) {
       <h3>{ItemListContainer.name}</h3>
       <div>${ItemListContainer.price}</div>
       <div>
-        <button onClick={() => onAdd(ItemListContainer)}>Add To Cart</button>
+        <button onClick={() => onAdd(ItemListContainer)}>Agregar al Carrito</button>
       </div>
     </div>
   );
