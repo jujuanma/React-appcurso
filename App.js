@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Header from './components/navBar';
 import Main from './components/Main';
 import Basket from './components/cartWidget';
-import data from './data';
+import data from './itemList';
 
 function App() {
   const { products } = data;
